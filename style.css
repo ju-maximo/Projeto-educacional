@@ -1,9 +1,3 @@
-.main-container {
-    width: 100vh;
-    height: 80%;
-    background-color: #151C35;
-
-}
 
 .home-header{
     background-color: #151C35f8;
@@ -18,6 +12,7 @@
     top: 0;
     left: 0;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .home-header__logo {
@@ -40,4 +35,19 @@
     margin-right: 0%;
     display: flex; justify-content: flex-end;
 
+}
+#main-container {
+    width: 100vh;
+    height: 100%;
+    background-color: #151C35;
+
+}
+#footer-container {
+background-color: #283565;
+width: 100%;
+height: 80px;
+box-sizing: border-box;
+align-items: center;
+bottom: 0%;
+position: fixed;
 }
