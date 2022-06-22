@@ -8,26 +8,36 @@
     <title>Projeto Tera</title>
 </head>
 <body>
-        <header class="home-header">
-            <div class="home-header__content"></div>
-            <div class="home-header__logo">
-                <img src="logo.png" alt="logo" width="200px" height="100px">
-            </div>
-            <div id="home-header__login-cadastre-se">
-                <input type="button" value="Login">
-                <input type="button" value="Cadastre-se">
-            </div>
-            
-        </header>
+    <header class="home-header">
+        <div class="home-header__content"></div>
+        <div class="home-header__logo">
+            <img src="logo.png" alt="logo" width="200px" height="100px">
+        </div>
+        <div id="home-header__login-cadastre-se">
+            <input type="button" value="Login">
+            <input type="button" value="Cadastre-se">
+        </div>
+    </header>
     <main id="main-container">
-        <div class="img-div"></div>
+        <div class="img-div">
+        </div>
         <div class="text-div"></div>
     
     </main>
 
     <footer id="footer-container">
-        <div class="contato"></div>
-        <div class="btn"></div>
+            <div id="redes-sociais">
+                <div>
+                    <a href="#"><img src="assets/icons/facebook.png" alt="Logo Facebook"></a>
+                    <a href="#"><img src="assets/icons/instagram.png" alt="Logo Instagram"></a>
+                </div>
+        </div>
+    </footer>
+    <button id="botao-topo" onclick="voltarParaTopo()">
+        <img src="assets/icons/arrow.png" 
+        alt="Símbolo de seta apontando para cima">
+    </button>
+    <script src="script.js" defer></script>
     </footer>
     <script src="script.js"></script>
 </body>
