@@ -14,14 +14,19 @@
             <img src="assets/rm373batch15-bg-05.jpg" alt="logo" width="200px" height="100px">
         </div>
         <div id="home-header__login-cadastre-se">
-            <input type="button" value="Login">
-            <input type="button" value="Cadastre-se">
+            <a class="home-header__login" href="/login/" onclick="new SignupTracker().sendSignupIntended(
+                'login'
+            );">Fazer login</a>
+
+            <a class="home-header__cadastre-se"href="/cadastro/" onclick="new SignupTracker().sendSignupIntended(
+                'singup'
+            );">Cadastre-se</a>
         </div>
     </header>
     <main id="main-container" class="container">
        <section class="cotainerUm">
         <div class="img-div-right">
-            <img src="css/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg" alt="grupo de estudantes" width="300px" height="auto">
+            
         </div>
         <div class="text-div-left">ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Ullam illum veniam impedit ipsum sed dolor totam ratione recusandae eius cum. 
