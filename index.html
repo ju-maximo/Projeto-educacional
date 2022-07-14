@@ -4,72 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Projeto Tera</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Projeto Educacional</title>
 </head>
-<body>
-    <header class="home-header">
-        <div class="home-header__content"></div>
-        <div class="home-header__logo">
-            <img src="assets/rm373batch15-bg-05.jpg" alt="logo" width="200px" height="100px">
+<body class="bg-info">
+    <nav class="py-2 bg-light border-bottom">
+        <div class="container d-flex flex-wrap">
+          <ul class="nav me-auto">
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Quem Somos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Intensivão</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Simulados</a></li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Entrar</a></li>
+          </ul>
         </div>
-        <div id="home-header__login-cadastre-se">
-            <a class="home-header__login" href="/login/" onclick="new SignupTracker().sendSignupIntended(
-                'login'
-            );">Fazer login</a>
-
-            <a class="home-header__cadastre-se"href="/cadastro/" onclick="new SignupTracker().sendSignupIntended(
-                'singup'
-            );">Cadastre-se</a>
+      </nav>
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">
+                <img height="50px" width="auto" src="style/logo.png" alt="" srcset="">
+                Stoodi</span>
+          </a>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
         </div>
-    </header>
-    <main id="main-container" class="container">
-       <section class="cotainerUm">
-        <div class="img-div-right">
-            
-        </div>
-        <div class="text-div-left">ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ullam illum veniam impedit ipsum sed dolor totam ratione recusandae eius cum. 
-            Repellendus nisi enim sit non, architecto maxime 
-            praesentium veritatis amet?
-        </div>
-       </section>
-       
-        <div class="img-div-left" >
-            <img src="css/fabio-lucas-IWngN5UWUbU-unsplash.jpg" alt="rapaz com notebook"  width="300px" height="auto">
-        </div>
-        <div class="text-div-right">ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ullam illum veniam impedit ipsum sed dolor totam ratione recusandae eius cum. 
-            Repellendus nisi enim sit non, architecto maxime 
-            praesentium veritatis amet?
-        </div>
-        <div class="img-div-right">
-            <img src="css/kyle-gregory-devaras-6RTM8EsD1T8-unsplash.jpg" alt="garota estudando"  width="300px" height="auto">
-        </div>
-        <div class="text-div-left">ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ullam illum veniam impedit ipsum sed dolor totam ratione recusandae eius cum. 
-            Repellendus nisi enim sit non, architecto maxime 
-            praesentium veritatis amet?
-        </div>
-
-    
-    </main>
-
-    <footer id="footer-container">
-            <div id="redes-sociais">
-                <div>
-                    <a href="#"><img src="assets/icons/facebook.png" alt="Logo Facebook"></a>
-                    <a href="#"><img src="assets/icons/instagram.png" alt="Logo Instagram"></a>
+      </header>
+    <main>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="style/kyle-gregory-devaras-6RTM8EsD1T8-unsplash.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Vai prestar o Enem esse ano? Ainda dá tempo de se preparar!</h1>
+                <p class="lead">Garanta já sua vaga na Turma de Junho do Cursinho Extensivo</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Matricule-se já</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Já sou aluno</button>
                 </div>
-                <h4>Fale conosco</h4>
-        </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 align-items-center">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"  role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      
+              <h2 class="fw-normal">Nossos Experts</h2>
+              <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+              <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      
+              <h2 class="fw-normal">Heading</h2>
+              <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+              <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      
+              <h2 class="fw-normal">Heading</h2>
+              <p>And lastly this, the third column of representative placeholder content.</p>
+              <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div>
+    </main>
+    <footer>
+        <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Fale Conosco</a></li>
+               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cursos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
+              </ul> 
+              <p class="text-center text-muted">© 2022 Company, Inc</p>
+            </footer>
+          </div>
+            </footer>
+          </div>
     </footer>
-    <button id="botao-topo" onclick="voltarParaTopo()">
-        <img src="assets/icons/arrow.png" 
-        alt="Símbolo de seta apontando para cima">
-    </button>
-    <script src="script.js" defer></script>
-    </footer>
-    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
