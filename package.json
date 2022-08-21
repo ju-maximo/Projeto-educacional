@@ -1,0 +1,23 @@
+{
+  "name": "projeto-educacional",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ju-maximo/Projeto-educacional.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ju-maximo/Projeto-educacional/issues"
+  },
+  "homepage": "https://github.com/ju-maximo/Projeto-educacional#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
