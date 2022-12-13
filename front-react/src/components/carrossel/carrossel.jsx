@@ -1,6 +1,7 @@
 import imagem1 from '../../img/professores-300x200.jpg'
 import imagem2 from '../../img/rm373batch15-bg-05.jpg'
 import imagem3 from '../../img/naason.jpg'
+
 function Carrossel(props) {
     return(
           <section className="container-sm container-carrossel">

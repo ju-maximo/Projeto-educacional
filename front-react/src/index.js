@@ -6,6 +6,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import OffcanvasExample from './components/navbar/navbar';
 import HomePage from './components/home/home';
+import Login from './components/login/login';
+import Cadastro from './components/cadastro/cadastro';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

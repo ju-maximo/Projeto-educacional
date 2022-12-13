@@ -2,6 +2,9 @@ import Componente1 from "./componente1";
 import logo from "../../img/logo.png"
 import Carrossel from "../carrossel/carrossel";
 import Tab from '../tab/tabela'
+import Planos from "../planos/planos";
+import Rodape from "../footer/footer";
+
 function HomePage () {
 return (
 <body className="bg-info">
@@ -37,7 +40,9 @@ return (
       
       <Componente1 titulo="Vai prestar o Enem esse ano? Ainda dá tempo de se preparar!" paragrafo="Garanta já sua vaga na Turma de Junho do Cursinho Extensivo"/>
       <Carrossel/>
+      <Planos/>
       <Tab/>
+      <Rodape/>
       </body>
       );
       };
