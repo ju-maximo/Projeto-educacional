@@ -1,28 +1,16 @@
 import Componente1 from "./componente1";
 import logo from "../../img/logo.png"
-import Carrossel from "../carrossel/carrossel";
-import Tab from '../tab/tabela'
-import Planos from "../planos/planos";
-import Rodape from "../footer/footer";
+import Carrossel from "../../components/carrossel/carrossel";
+import Tab from '../../components/tab/tabela'
+import Planos from "../../components/planos/planos";
+import Rodape from "../../components/footer/footer";
+import { NavLink } from "react-router-dom";
+import Header from "../../components/header/header";
 
 function HomePage () {
 return (
 <body className="bg-info">
-    <nav className="py-2 bg-light border-bottom">
-        <div className="container d-flex flex-wrap">
-          <ul className="nav me-auto">
-            <li className="nav-item"><a href="#" className="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-            <li className="nav-item"><a href="#" className="nav-link link-dark px-2">Quem Somos</a></li>
-            <li className="nav-item"><a href="#" className="nav-link link-dark px-2">Intensivão</a></li>
-            <li className="nav-item"><a href="#" className="nav-link link-dark px-2">FAQs</a></li>
-            <li className="nav-item"><a href="#" className="nav-link link-dark px-2">Simulados</a></li>
-          </ul>
-          <ul className="nav">
-            <li className="nav-item"><a href="login.html" className="nav-link link-dark px-2">Login</a></li>
-            <li className="nav-item"><a href="cadastro.html" className="nav-link link-dark px-2">Cadastro</a></li>
-          </ul>
-        </div>
-    </nav>
+
 {/* aqui termina a navbar e começa o header */}
     <header className="py-3 mb-4 border-bottom">
         <div className="container d-flex flex-wrap justify-content-center">
@@ -42,7 +30,6 @@ return (
       <Carrossel/>
       <Planos/>
       <Tab/>
-      <Rodape/>
       </body>
       );
       };

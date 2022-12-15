@@ -1,4 +1,4 @@
-function Rodape (props) {
+function Footer (props) {
     return (
 
 <footer>
@@ -17,4 +17,4 @@ function Rodape (props) {
             </footer>
 )}
 
-export default Rodape
+export default Footer
