@@ -8,3 +8,9 @@
     display: flex;
     flex-direction: column;
 }
+
+.imagens {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}

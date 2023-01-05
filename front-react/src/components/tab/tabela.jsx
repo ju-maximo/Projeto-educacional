@@ -1,68 +1,66 @@
-import imagem4 from '../../img/cruz.png'
-
+import imagem4 from '../../img/check.png'
+import "./tabela.css"
 
 function Tab(props) {
     return(
 
-
-  <>
+  <div className="container-sm">
   <h2 className="display-6 text-center mb-4">Compare os planos</h2>
   
   <div className="table-responsive">
     <table className="table text-center">
       <thead>
         <tr>
-          {/* <th style="width: 34%;"></th> */}
-          {/* <th style="width: 22%;">Free</th>
-          <th style="width: 22%;">Pro</th>
-          <th style="width: 22%;">Enterprise</th> */}
+          <th className="width"></th>
+          <th className="width">Free</th>
+          <th className="width">Pro</th>
+          <th className="width">Master</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row" className="text-start">Public</th>
-          <td><img src={imagem4} alt=""/></td>
-        {/*<td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
-        {/*<td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
+          <th scope="row" className="text-start">Aulas Gravadas</th>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
         </tr>
         <tr>
-          <th scope="row" className="text-start">Private</th>
-          <td></td>
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
+          <th scope="row" className="text-start">Fórum</th>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
         </tr>
       </tbody>
 
       <tbody>
         <tr>
-          <th scope="row" className="text-start">Permissions</th>
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
+          <th scope="row" className="text-start">Aulas Online</th>
+          <td></td>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
         </tr>
         <tr>
-          <th scope="row" className="text-start">Sharing</th>
+          <th scope="row" className="text-start">Plantão de dúvidas</th>
           <td></td>
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
+          <td><img src={imagem4} alt="" className="xheight"/></td>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
         </tr>
         <tr>
-          <th scope="row" className="text-start">Unlimited members</th>
+          <th scope="row" className="text-start">Simulados</th>
           <td></td>
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
+          <td></td>
+          <td><img src={imagem4} alt="" className="xheight"/></td>
         </tr>
         <tr>
-          <th scope="row" className="text-start">Extra security</th>
+          <th scope="row" className="text-start">Redação</th>
           <td></td>
           <td></td>
-          {/* <td><svg className="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> */}
+          <td><img src={imagem4} alt="" className="xheight"/></td>
         </tr>
       </tbody>
     </table>
   </div>
-
-  </>
+  </div>
     
     )}
 
