@@ -3,12 +3,12 @@ import "./tabela.css"
 
 function Tab(props) {
     return(
-
+  <div className='planos-w'>
   <div className="container-sm">
   <h2 className="display-6 text-center mb-4">Compare os planos</h2>
   
   <div className="table-responsive">
-    <table className="table text-center">
+    <table className="table text-center planos-w">
       <thead>
         <tr>
           <th className="width"></th>
@@ -59,6 +59,7 @@ function Tab(props) {
         </tr>
       </tbody>
     </table>
+  </div>
   </div>
   </div>
     
