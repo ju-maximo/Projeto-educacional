@@ -1,19 +1,9 @@
-import logo from "../../img/logo.png"
-
+import "./cadastro.css"
 
 function Cadastro (props) {
     return (
         <body className="bg-info">
-    <header>
-        <nav className="navbar bg-light">
-            <div className="container">
-              <a className="navbar-brand" href="#">
-                <img src={logo} alt="" width="30" height="24"/>
-              </a>
-            </div>
-          </nav>
-    </header>
-    <div className=" container-cadastro">
+    <div className=" container-cadastro container2">
         <form className="row g-3" id="form" onsubmit="return criarCadastro(event)">
             <div className="col-md-6">
               <label for="inputEmail4" className="form-label">Email</label>
@@ -42,16 +32,8 @@ function Cadastro (props) {
                 <option>...</option>
               </select>
             </div>
-             <div className="col-12">
-              <div className="form-check">
-                <input className="form-check-input" type="checkbox" id="gridCheck"/>
-                <label className="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
-            </div>
             <div className="col-12">
-              <button type="submit" className="btn btn-primary">Cadastrar</button>
+              <button type="submit" className="btn btn-primary botao2">Cadastrar</button>
             </div>
           </form>
     </div>
