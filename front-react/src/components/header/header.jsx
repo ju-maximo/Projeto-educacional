@@ -7,6 +7,7 @@ function Header () {
         <div className="container d-flex flex-wrap">
           <ul className="nav me-auto">
             {/* <img src={logo} alt="a"/> */}
+            <li className="nav-item"><NavLink to="/" className="nav-link link-dark px-2 nav-brand"><img src={logo} alt="a"/></NavLink></li>
             <li className="nav-item"><NavLink to="/" className="nav-link link-dark px-2">Home</NavLink></li>
             <li className="nav-item"><a href="#" className="nav-link link-dark px-2">Quem Somos</a></li>
             <li className="nav-item"><a href="#" className="nav-link link-dark px-2">Intensivão</a></li>

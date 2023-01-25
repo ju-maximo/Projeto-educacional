@@ -5,6 +5,7 @@ function Cadastro (props) {
         <body className="bg-info">
     <div className=" container-cadastro container2">
         <form className="row g-3" id="form" onsubmit="return criarCadastro(event)">
+           <div className= "row">
             <div className="col-md-6">
               <label for="inputEmail4" className="form-label">Email</label>
               <input type="email" className="form-control" id="inputEmail4" onchange="pegarEmail(event)" name="email" value=""/>
@@ -32,8 +33,11 @@ function Cadastro (props) {
                 <option>...</option>
               </select>
             </div>
-            <div className="col-12">
-              <button type="submit" className="btn btn-primary botao2">Cadastrar</button>
+            </div>
+           <div className= "row">
+            <div className="col-12 d-flex justify-content-center pt-3">
+              <button type="submit" className="btn btn-primary">Cadastrar</button>
+            </div>
             </div>
           </form>
     </div>
