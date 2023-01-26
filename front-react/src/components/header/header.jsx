@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import logo from "../.././img/logo s azul.png"
+import "./header.css"
 
 function Header () {
     return (
@@ -7,12 +8,12 @@ function Header () {
         <div className="container d-flex flex-wrap">
           <ul className="nav me-auto">
             {/* <img src={logo} alt="a"/> */}
-            <li className="nav-item"><NavLink to="/" className="nav-link link-dark px-2 nav-brand"><img src={logo} alt="a"/></NavLink></li>
+            <li className="nav-item"><NavLink to="/" className="nav-link link-dark px-2 nav-brand p-0"><img src={logo} alt="a" className="imagem"/></NavLink></li>
             <li className="nav-item"><NavLink to="/" className="nav-link link-dark px-2">Home</NavLink></li>
-            <li className="nav-item"><a href="#" className="nav-link link-dark px-2">Quem Somos</a></li>
-            <li className="nav-item"><a href="#" className="nav-link link-dark px-2">Intensivão</a></li>
-            <li className="nav-item"><a href="#" className="nav-link link-dark px-2">FAQs</a></li>
-            <li className="nav-item"><a href="#" className="nav-link link-dark px-2">Simulados</a></li>
+            <li className="nav-item"><NavLink to="/" className="nav-link link-dark px-2">Cursos</NavLink></li>
+            <li className="nav-item"><NavLink to="/" className="nav-link link-dark px-2">Simulados</NavLink></li>
+            <li className="nav-item"><NavLink to="/" className="nav-link link-dark px-2">Quem Somos</NavLink></li>
+            <li className="nav-item"><NavLink to="/" className="nav-link link-dark px-2">FAQs</NavLink></li>
           </ul>
           <ul className="nav">
             <li className="nav-item"><NavLink to="/login" className="nav-link link-dark px-2">Login</NavLink></li>

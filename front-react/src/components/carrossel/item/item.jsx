@@ -1,4 +1,5 @@
 import "../../carrossel/carrosel.css"
+import { NavLink } from "react-router-dom"
 
 function Item(props) {
     return(
@@ -6,7 +7,7 @@ function Item(props) {
                   <img src={props.image} className="imagens" alt={props.alt}/>
                 <h2 className="fw-normal">{props.title}</h2>
                 <p>{props.texto}</p>
-                <a className="btn btn-secondary" href="#">View details »</a>
+                <NavLink to="/" className="btn btn-secondary">Ver detalhes</NavLink>
               </div>
           )}
 

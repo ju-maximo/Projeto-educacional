@@ -1,4 +1,6 @@
 import imagem from '../../img/kyle-gregory-devaras-6RTM8EsD1T8-unsplash.jpg'
+import { NavLink } from "react-router-dom"
+
 
 function Componente1(props) {
 return(
@@ -11,8 +13,8 @@ return(
                 <h1 className="display-5 fw-bold lh-1 mb-3">{props.titulo}</h1>
                 <p className="lead">{props.paragrafo}</p>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <a href="cadastro.html" role="button" className="btn btn-primary btn-lg px-4 me-md-2">Matricule-se já</a>
-                  <a href="login.html" role="button" className="btn btn-outline-secondary btn-lg px-4">Já sou aluno</a>
+                <NavLink to="/cadastro" role="button" className="btn btn-primary btn-lg px-4 me-md-2">Matricule-se já</NavLink>
+                <NavLink to="/login" role="button" className="btn btn-outline-secondary btn-lg px-4">Já sou aluno</NavLink>
                 </div>
               </div>
             </div>

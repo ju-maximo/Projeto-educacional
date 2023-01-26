@@ -1,4 +1,3 @@
-import logo from "../../img/logo s branco.png"
 import "./login.css"
 
 function Login () {
