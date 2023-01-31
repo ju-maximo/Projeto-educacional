@@ -1,8 +1,8 @@
-const UserSchema = require('../models/userSchema')
-const login = (req, res) => {
+// const UserSchema = require('../models/userSchema')
+// const login = (req, res) => {
 
-}
+// }
 
-module.exports = {
-    login
-}
+// module.exports = {
+//     login
+// }

@@ -1,6 +1,4 @@
 const { json } = require("express")
-const { Model, model, models, Mongoose, default: mongoose } = require("mongoose")
-const { findByIdAndUpdate, db } = require("../model/userSchema")
 const userSchema = require("../model/userSchema")
 
 const getAll = async(req, res) => {
@@ -26,18 +24,45 @@ const createUser = async(req, res)=> {
     }
 }
 
-const updateUser = async(req, res) => {
-    const userId = req.params.id
-    const oldUser = mongoose[userId]
-    const newUser = req.body
-    mongoose[userId] = {...oldUser, ...newUser}
-    const savedUser = await mongoose[userId].save()
-    res.send(mongoose[userId],
-        savedUser)
-      };
+// const updateUser = async(req, res) => {
+//     const userId = req.params.id
+//     const oldUser = mongoose[userId]
+//     const newUser = req.body
+//     mongoose[userId] = {...oldUser, ...newUser}
+//     const savedUser = await mongoose[userId].save()
+//     res.send(mongoose[userId],
+//         savedUser)
+//       };
 
+const updateUser = function (req, res, next) {
+    const aaa = userSchema  
+    aaa.findOneAndUpdate({_name: req.params.name},
+                req.body).then(function(){
+          aaa.findOne({_name: req.params.name}).then(function(ip){
+            res.send(ip);
+          });
+        }).catch(next);
+     };    
 
+// async function updateUser(payload, user) {
+//     let userModel = mongoose.model(user, 'name');
+//     userModel.findOneAndUpdate({name: name}, payload);
+//     return (200)
+// }
 
+// const updateUser = async (req, res) => {
+//     const id = req.params.id
+//     const {name, email, password} = req.body
+//     const usuario = {
+//         name, email, password
+//     }
+//     try {
+//         const usuarioAtualizado = userSchema.updateOne({_id: id}, usuario)
+//         res.status(200).json()
+//     } catch (err) {
+//         res.status(500).json({error: error})
+
+// }}
 
 module.exports = {
     getAll , createUser , updateUser

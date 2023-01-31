@@ -17,7 +17,7 @@ function Login () {
                   <label for="floatingPassword">Senha</label>
                 </div>
             
-                <div className="checkbox mb-3">
+                <div className="checkbox mb-3 mt-3">
                   <label>
                     <input type="checkbox" value="remember-me"/> Remember me
                   </label>

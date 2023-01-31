@@ -1,0 +1,23 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Leandro Andrade", email = "leandroass.013@gmail.com"},
+]
+dependencies = [
+    "flask>=2.2.2",
+    "flask-sqlalchemy>=3.0.2",
+    "psycopg2>=2.9.5",
+    "flask-cors>=3.0.10",
+    "six>=1.16.0",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]

@@ -15,3 +15,15 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+.imagens:nth-child(1) {
+    object-position: 75% 0;
+}
+
+.imagens:nth-child(3) {
+    object-position: 0 75%;
+}
+
+.texto{
+    text-align: center;
+}

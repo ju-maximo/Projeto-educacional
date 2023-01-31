@@ -1,6 +1,36 @@
 import "./cadastro.css"
+import { useState } from "react"
 
 function Cadastro (props) {
+    let [email, setEmail] = useState("")
+    let [username, setUsername] = useState("")
+
+    function pegarEmail(e) {
+      setEmail(
+        e.target.value
+      )
+    }
+
+    function pegarUsername(e) {
+      setUsername(
+        e.target.value
+      )
+    }
+
+    function enviar (event) { 
+      event.preventDefault()
+      const options = {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, username })
+      };
+      fetch('http://localhost:5000/post', options)
+          .then(response => response.json())
+          .then(data => {
+            console.log(data)
+          });
+      }
+
     return (
         <body className="bg-info">
     <div className=" container-cadastro container2">
@@ -8,19 +38,19 @@ function Cadastro (props) {
            <div className= "row">
             <div className="col-md-6">
               <label for="inputEmail4" className="form-label">Email</label>
-              <input type="email" className="form-control" id="inputEmail4" onchange="pegarEmail(event)" name="email" value=""/>
+              <input type="email" className="form-control" id="inputEmail4" onChange={pegarEmail} name="email"/>
             </div>
             <div className="col-md-6">
               <label for="inputPassword4" className="form-label">Senha</label>
-              <input type="password" className="form-control" id="inputPassword4" onchange="pegarSenha(event)" value="" name="senha"/>
+              <input type="password" className="form-control" id="inputPassword4" onchange="pegarSenha(event)" name="senha"/>
             </div>
             <div className="col-md-6">
                 <label for="inputZip" className="form-label">Cep</label>
-                <input type="text" className="form-control" id="cep" onchange="pegarCep(event)" value=" " name="cep"/>
+                <input type="text" className="form-control" id="cep" onchange="pegarCep(event)" name="cep"/>
               </div>
               <div className="col-md-6">
-                <label for="inputCity" className="form-label">Cidade</label>
-                <input type="text" className="form-control" id="inputCity"/>
+                <label for="inputCity" className="form-label">Username</label>
+                <input type="text" className="form-control" id="inputCity" onChange={pegarUsername}/>
               </div>
             <div className="col-6">
                 <label for="inputAddress" className="form-label">Endereço</label>
@@ -36,7 +66,7 @@ function Cadastro (props) {
             </div>
            <div className= "row">
             <div className="col-12 d-flex justify-content-center pt-3">
-              <button type="submit" className="btn btn-primary">Cadastrar</button>
+              <button type="submit" className="btn btn-primary" onClick={enviar}>Cadastrar</button>
             </div>
             </div>
           </form>
